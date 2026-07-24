@@ -1,0 +1,8 @@
+{
+    "l13Diff.exclude": [
+        ".git"
+    ],
+    "l13Diff.ignoreEndOfLine": false,
+    "l13Diff.ignoreTrimWhitespace": "default",
+    "l13Diff.ignoreByteOrderMark": false
+}
