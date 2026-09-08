@@ -71,6 +71,9 @@ class HuggingFaceUpload:
                         remoteFileObject[entry.path] = entry
 
                 for pathCurrent, directoryWalkList, fileList in os.walk(pathRepository):
+                    if ".git" in directoryWalkList:
+                        directoryWalkList.remove(".git")
+
                     for b in range(len(fileList)):
                         pathFile = os.path.join(pathCurrent, fileList[b])
                         pathRelative = os.path.relpath(pathFile, pathRepository)
