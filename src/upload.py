@@ -1,12 +1,12 @@
 import sys
-sys.dont_write_bytecode = True
-
 import os
 import getpass
 import hashlib
 import json
 from huggingface_hub import HfApi
 from huggingface_hub.hf_api import RepoFile
+
+sys.dont_write_bytecode = True
 
 class HuggingFaceUpload:
     def _cacheSave(self):
